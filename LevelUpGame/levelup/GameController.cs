@@ -31,7 +31,6 @@ namespace levelup
         }
 
         // Pre-implemented to demonstrate ATDD
-        // TODO: Update this if it does not match your design
         public void CreateCharacter(String name)
         {
             if (name != null && !name.Equals(""))
@@ -42,6 +41,7 @@ namespace levelup
             {
                 this.status.characterName = DEFAULT_CHARACTER_NAME;
             }
+            return name;
         }
 
         public void StartGame()

@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using levelup;
+using System.Drawing.Printing;
 
 namespace levelup
 {
@@ -7,6 +8,10 @@ namespace levelup
     public class GameControllerTest
     {
         private GameController? testObj;
+            string character = "ATARI";
+            enum direction{
+                NORTH
+            };
 
         [SetUp]
         public void SetUp()
@@ -17,8 +22,31 @@ namespace levelup
         [Test]
         public void IsGameResultInitialized()
         {
-#pragma warning disable CS8602 // Rethrow to preserve stack details
-            Assert.IsNotNull(testObj.GetStatus());
+            //Assert.IsNotNull(testObj.GetStatus());
+        }
+        [Test]
+        public void CreateCharacterTest(string characterName)
+        {
+            Assert.AreEqual(characterName,testObj.DEFAULT_CHARACTER_NAME);
+        }
+
+        [Test]
+        public void whenTheCharacterSetsTheirNameTest()
+        {
+            string nameSet = testObj.CreateCharacter("characterName");
+            Assert.AreNotSame(character,nameSet);
+        }
+        [Test]
+        public void ThenTheResultShouldBe(string characterNameOutput)
+        {
+            
+            Assert.IsNotEmpty(characterNameOutput.ToString());
+        }
+        [Test]
+        public void GetStatusTest()
+        {
+            object status = testObj.GetStatus();
+            Assert.IsNotEmpty(status.ToString());
         }
     }
 }
