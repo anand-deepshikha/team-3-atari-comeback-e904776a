@@ -1,18 +1,18 @@
 using NUnit.Framework;
 using levelup;
 using System.Drawing;
-//using Map;
+//using GameMap;
 
 namespace levelup
 {
     [TestFixture]
     public class GameMapTest
     {
-        Map testObj = new Map();
+        GameMap testObj = new GameMap();
         [SetUp]
         public void SetUp()
         {
-           testObj = new Map();
+           testObj = new GameMap();
         }
 
         [Test]

@@ -8,12 +8,12 @@ namespace levelup
         string name;
         static string DEFAULT_NAME="ATARI";
         Position currPos;
-        Map map;
+        GameMap map;
         public Character()
         {
             currPos=new Position(0,0);
             name=DEFAULT_NAME;
-            map= new Map();
+            map= new GameMap();
         }   
         public Character(string name) 
         {
@@ -29,7 +29,7 @@ namespace levelup
         {
           return currPos;
         }
-        public void enterMap(Map map)
+        public void enterMap(GameMap map)
         {
 
         }
