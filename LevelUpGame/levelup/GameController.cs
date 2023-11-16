@@ -31,7 +31,7 @@ namespace levelup
         }
 
         // Pre-implemented to demonstrate ATDD
-        public void CreateCharacter(String name)
+        public string CreateCharacter(String name)
         {
             if (name != null && !name.Equals(""))
             {
@@ -63,6 +63,7 @@ namespace levelup
 
         public void SetCharacterPosition(Point coordinates)
         {
+            Character objChracter = new Character();
             //TODO: IMPLEMENT THIS TO SET CHARACTERS CURRENT POSITION -- exists to be testable
         }
 
