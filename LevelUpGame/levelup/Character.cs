@@ -20,16 +20,22 @@ namespace levelup
             this.name=name;
             currPos=new Position(0,0);
         }
-        string getName()
+        public string getName()
         {
             return this.name;
         }
 
-        Position getPosition()
+        public Position getPosition()
         {
           return currPos;
         }
-        
+        public void enterMap(Map map)
+        {
 
+        }
+        public void move(GameController.DIRECTION direction)
+        {
+            
+        }
     }
 }
