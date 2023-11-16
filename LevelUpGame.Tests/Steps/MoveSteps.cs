@@ -11,7 +11,7 @@ namespace DotNetExample.Tests.Steps
     public class MoveSteps
     {
         GameController testObj = new GameController();
-        int startX, startY;
+        int startX = 0, startY = 0;
         GameController.DIRECTION direction;
         Point currentPosition;
 
