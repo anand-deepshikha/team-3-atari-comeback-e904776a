@@ -6,14 +6,17 @@ namespace levelup
     public class Character
     {
         string name;
+        static string DEFAULT_NAME="ATARI";
         Position currPos;
-        Character()
+        public Character()
         {
-            
+            currPos=new Position(0,0);
+            name=DEFAULT_NAME;
         }   
-        Character(string name) 
+        public Character(string name) 
         {
             this.name=name;
+            currPos=new Position(0,0);
         }
         string getName()
         {
@@ -25,6 +28,6 @@ namespace levelup
           return currPos;
         }
         
-        
+
     }
 }
