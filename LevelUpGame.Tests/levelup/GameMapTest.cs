@@ -18,8 +18,8 @@ namespace levelup
         [Test]
         public void TestMapCreatesPositionsWhenInitialized()
         {
-            Assert.NotNull(testObj.positions);
-            Assert.AreEqual(100, testObj.positions);
+    
+            Assert.AreEqual(100, testObj.getTotalPositions);
         }
 
         [Test]
