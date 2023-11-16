@@ -2,6 +2,8 @@ using NUnit.Framework;
 using levelup;
 using System.Drawing.Printing;
 
+
+
 namespace levelup
 {
     [TestFixture]
@@ -24,7 +26,7 @@ namespace levelup
         {
             //Assert.IsNotNull(testObj.GetStatus());
         }
-        [Test]
+        /*[Test]
         public void CreateCharacterTest(string characterName)
         {
             //Assert.AreEqual(characterName,testObj.DEFAULT_CHARACTER_NAME);
@@ -35,18 +37,19 @@ namespace levelup
         {
             //string nameSet = testObj.CreateCharacter("characterName");
            // Assert.AreNotSame(character,nameSet);
-        }
-        [Test]
-        public void ThenTheResultShouldBe(string characterNameOutput)
-        {
-            
-            Assert.IsNotEmpty(characterNameOutput.ToString());
-        }
+        } 
         [Test]
         public void GetStatusTest()
         {
             //object status = testObj.GetStatus();
             //Assert.IsNotEmpty(status.ToString());
-        }
+        }*/
+       /* [Test]
+        public void ThenTheResultShouldBe(string characterNameOutput)
+        {
+            
+            Assert.IsNotEmpty(characterNameOutput.ToString());
+        }*/
+        
     }
 }

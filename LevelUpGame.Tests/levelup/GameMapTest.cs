@@ -1,17 +1,18 @@
 using NUnit.Framework;
 using levelup;
 using System.Drawing;
+//using Map;
 
 namespace levelup
 {
     [TestFixture]
     public class GameMapTest
     {
-        Map testObj;
+        Map testObj = new Map();
         [SetUp]
         public void SetUp()
         {
-            testObj = new Map();
+           testObj = new Map();
         }
 
         [Test]
@@ -25,11 +26,9 @@ namespace levelup
         public void TestIsPositionValid()
         {
             Assert.AreEqual(true, testObj.isPositionValid(new Point(1,2)));
-            //Assert.AreEqual(false, testObj.isPositionValid(new Point(-1,2)));
-            //Assert.AreEqual(false, testObj.isPositionValid(new Point(1,-2)));
+            Assert.AreEqual(false, testObj.isPositionValid(new Point(-1,2)));
+            Assert.AreEqual(false, testObj.isPositionValid(new Point(1,-2)));
         }
     
-
-        
     }
 }
