@@ -20,9 +20,9 @@ namespace levelup {
         public bool isPositionValid(Point point) {
            
            
-        if (point.X > 0 && point.X < 9 )
+        if (point.X >= 0 && point.X <= 9 )
         {
-            if (point.Y > 0 && point.Y < 9 )
+            if (point.Y >= 0 && point.Y <= 9 )
             {
              return true;
             }
