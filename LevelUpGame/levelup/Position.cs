@@ -1,11 +1,11 @@
+using System.Drawing;
+
 namespace levelup {
     public class Position {
 
-        int xCoordinates = 0;
-        int yCoordinates = 0;
+        Point coordinates;
         public Position(int xCoordinates, int yCoordinates) {
-            this.xCoordinates = xCoordinates;
-            this.yCoordinates = yCoordinates;
+            coordinates = new Point(xCoordinates, yCoordinates);
         }
     }
 }
