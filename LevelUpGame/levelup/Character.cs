@@ -6,6 +6,7 @@ namespace levelup
     public class Character
     {
         string name;
+        Position currPos;
         Character()
         {
             
@@ -21,8 +22,9 @@ namespace levelup
 
         Position getPosition()
         {
-          
+          return currPos;
         }
+        
         
     }
 }
